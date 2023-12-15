@@ -1,0 +1,121 @@
+    a{
+     text-decoration: none;
+    }
+
+    body {
+      font-family: jost, sans-serif;
+      
+      padding: 0;
+      background-color: #e7dfd8;
+    }
+
+    header {
+      background-color: #e7dfd8;
+      color: #e7dfd8;
+      padding: 15px;
+      text-align: center;
+      font-size: 2svw;
+    }
+
+    nav {
+      text-align: left;
+      margin: 20px 0;
+      margin-left: 10%;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #251605;
+      margin: 0 5%;
+      font-size: 28px;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+      display: inline-block;
+    }
+
+    nav a::before {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 2px;
+      bottom: -4px;
+      left: -25%;
+      background-color: #251605;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    nav a:hover::before, nav a.active::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    nav a:hover {
+      color: #251605;
+    }
+
+    nav a.active {
+      color: #251605;
+      font-weight: bold;
+    }
+
+    .content-box {
+      max-width: 90%;
+      min-height: 75svh; 
+      max-height: 75svh;
+      margin: 0 auto;
+      margin-top: 1%;
+      background-color: #e7dfd8;;
+      padding: 20px;
+      border: #251605;
+      border: 2.5px solid #251605;
+      font-size: 4svh;
+      display: flex;
+      flex: 1;
+    }
+    .content-container {
+      overflow: auto;
+      margin-left: 3%;
+    }
+
+    .column2 {
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .column1{
+      padding: 20px;
+    }
+    .name{
+    margin-top: 15svh;
+    font-size: 5svw;
+    margin-bottom: -2svh;
+    font-weight: bold;
+    }
+
+    .pic{
+    width: 30svw;
+    float: right;   
+    margin: 10%;
+    }
+
+    .logo-container{
+    margin-top: 20%;
+    margin-left: 3%;
+    
+    }
+
+    .ig{
+    width: 60px;
+    }
+
+    .fb{
+    margin-left: 3%;
+    width: 58px;
+    }
+
+    .twt{
+    margin-left: 3%;
+    width: 62px;
+    }
